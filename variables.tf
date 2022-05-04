@@ -2,6 +2,7 @@
 variable "region" {
   type        = string
   description = "AWS Region where the environment and its resources will be created"
+  default     = "us-east-1"
 }
 variable "account_id" {
   type        = string
