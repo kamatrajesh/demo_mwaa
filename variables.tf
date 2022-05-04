@@ -80,7 +80,7 @@ variable "private_subnet_cidrs" {
 variable "private_subnet_ids" {
   description = "Subnet Ids of the existing private subnets that should be used if create_networking_config=false"
   type        = list(string)
-  default     = ["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
+  default     = []
 }
 
 # iam
