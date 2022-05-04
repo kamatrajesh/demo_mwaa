@@ -69,18 +69,18 @@ variable "create_networking_config" {
 variable "public_subnet_cidrs" {
   description = "CIDR blocks for the public subnets MWAA uses. Must be at least 2 if create_networking_config=true"
   type        = list(string)
-  default     = []
+  default     = ["10.192.10.0/24","10.192.11.0/24"]
 }
 variable "private_subnet_cidrs" {
   description = "CIDR blocks for the private subnets MWAA uses. Must be at least 2 if create_networking_config=true"
   type        = list(string)
-  default     = []
+  default     = ["10.192.20.0/24","10.192.21.0/24"]
 }
 
 variable "private_subnet_ids" {
   description = "Subnet Ids of the existing private subnets that should be used if create_networking_config=false"
   type        = list(string)
-  default     = []
+  default     = ["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
 }
 
 # iam
