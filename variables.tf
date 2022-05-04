@@ -63,7 +63,7 @@ variable "internet_gateway_id" {
 variable "create_networking_config" {
   description = "true if networking resources (subnets, eip, NAT gateway and route table) should be created."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "public_subnet_cidrs" {
