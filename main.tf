@@ -1,6 +1,6 @@
 resource "aws_mwaa_environment" "this" {
   airflow_configuration_options = var.airflow_configuration_options
-
+  region    = var.region
   execution_role_arn = aws_iam_role.this.arn
   name               = var.environment_name
   max_workers        = var.max_workers
